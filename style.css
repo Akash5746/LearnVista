@@ -87,7 +87,22 @@ html{
 .menu-icon{
     width: 50px;
 }
-
+/*adding media for nav  */
+@media screen and (min-width:810px){
+    .nav{
+        display: flex;
+    }
+     
+    .contact-button{
+        display: block;
+    }
+}
+@media screen and (max-width:810px){
+    .menu-button{
+        display: block;
+    }
+    
+}
 /*css for main section and hero section*/
 .content{
     margin-bottom: 4rem;
@@ -139,6 +154,17 @@ html{
     font-size: 18px;
     font-weight: 600;
     
+}
+/*adding keyframes for animaton for slidefromleft identifier*/
+@keyframes slidefromleft {
+    0%{
+        opacity: o;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .content-right{
     display: flex;
@@ -196,6 +222,24 @@ html{
     height: 45px;
     width: 100px;
     border-radius: 15px;
+}
+/*adding media screen for responsive  company container section*/
+@media screen and (min-width:700px){
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .company-title{
+        font-size: 35px;
+    }
+    .company-grid{
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width:660px){
+    .feature-grid{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 /*css for feature section*/
 .feature-container{
@@ -417,4 +461,28 @@ html{
 .news-link{
     text-decoration: underline;
     color: #7a2424;
+}
+/*adding media screen for responsive website*/
+@media screen and (min-width:810px){
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width: 70%;
+        text-align: left;
+        
+    }
+    .section-title{
+        padding-left: 0;
+    }
+    .content-group{
+        justify-content: start;
+        padding-left: 0;
+    }
+    .section-title{
+        font-size: 50px;
+    }
+    .section-description{
+        color: rgb(65, 62, 62);
+    }
 }
